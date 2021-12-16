@@ -25,16 +25,20 @@ const participants = [
 const App = () => {
   return React.createElement(
     "div",
-    { className: "participants-container" },
+    { className: "app-container" },
     React.createElement("h1", { className: "title" }, "Participants"),
-    participants.map((person, index) =>
-      React.createElement(Person, {
-        avatar: person.avatar,
-        personName: person.personName,
-        fieldOfStudy: person.fieldOfStudy,
-        hobbies: person.hobbies,
-        key: `${person.personName}${index}`
-      })
+    React.createElement(
+      "div",
+      { className: "participants-container" },
+      participants.map((person, index) =>
+        React.createElement(Person, {
+          avatar: person.avatar,
+          personName: person.personName,
+          fieldOfStudy: person.fieldOfStudy,
+          hobbies: person.hobbies,
+          key: `${person.personName}${index}`
+        })
+      )
     )
   );
 };
