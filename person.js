@@ -7,22 +7,26 @@ const Person = props => {
       className: "person-avatar"
     }),
     React.createElement(
-      "h4",
-      { className: "person-name" },
-      `name: ${props.personName}`
-    ),
-    React.createElement(
-      "h4",
-      { className: "person-field-of-study" },
-      `study: ${props.fieldOfStudy}`
-    ),
-    React.createElement(
       "div",
-      { className: "person-hobbies-container" },
+      { className: "person-info-container" },
       React.createElement(
         "h4",
-        { className: "person-hobbies-title" },
-        `hobbies: ${props.hobbies.join(", ")}`
+        { className: "person-name" },
+        `name: ${props.personName}`
+      ),
+      React.createElement(
+        "h4",
+        { className: "person-field-of-study" },
+        `study: ${props.fieldOfStudy}`
+      ),
+      React.createElement(
+        "div",
+        { className: "person-hobbies-container" },
+        React.createElement(
+          "h4",
+          { className: "person-hobbies-title" },
+          `hobbies: ${props.hobbies.join(", ")}`
+        )
       )
     )
   );
