@@ -17,8 +17,8 @@ const participants = [
     avatar:
       "https://media.istockphoto.com/vectors/default-avatar-profile-icon-grey-photo-placeholder-vector-id846183008?k=20&m=846183008&s=170667a&w=0&h=WIxZSP7aJ9jSvW3xqzDsWSI5g666kVBBgCNkABzYs68=",
     personName: "Roudan Chirkoh",
-    fieldOfStudy: "Front End Web Development",
-    hobbies: ["coding", "music", "gaming", "reading"]
+    fieldOfStudy: "Web Development",
+    hobbies: ["coding", "music"]
   }
 ];
 
@@ -26,7 +26,7 @@ const App = () => {
   return React.createElement(
     "div",
     { className: "app-container" },
-    React.createElement("h1", { className: "title" }, "Participants"),
+    React.createElement("h1", { className: "title" }, "Participants:"),
     React.createElement(
       "div",
       { className: "participants-container" },
